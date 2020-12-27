@@ -8,7 +8,8 @@
     "webpack:debug": "node --inspect-brk ./node_modules/.bin/webpack --inline --progress",
     "build": "cross-env NODE_ENV=prod webpack --config config/webpack.config.prod.js",
     "dev": "cross-env NODE_ENV=dev nodemon --exec babel-node --inspect ./src/index.js",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "ncu": "ncu"
   },
   "keywords": [],
   "author": {
@@ -24,6 +25,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.6",
+    "npm-check-updates": "^10.2.5",
     "rimraf": "^3.0.2",
     "terser-webpack-plugin": "^5.0.3",
     "webpack": "^5.10.0",
